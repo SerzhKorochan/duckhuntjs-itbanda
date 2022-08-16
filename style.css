@@ -3,6 +3,8 @@
     src: url(assets/fonts/Pragmatica-Light.ttf);
 }
 
+
+/*Main styles*/
 html, 
 body{
     padding: 0;
@@ -15,6 +17,8 @@ body{
     position: relative;
     height: 100%;
 }
+
+/*Bg*/
 .bg-container{
     position: relative;
     height: 100%;
@@ -37,6 +41,7 @@ body{
     z-index: 1;
 }
 
+/*Content container*/
 .content-container{
     position: absolute;
     top: 0;
@@ -48,6 +53,7 @@ body{
     height: 100%;
     z-index: 3;
 }
+
 .game-info-bar{
     display: flex;
     align-items: center;
@@ -78,6 +84,47 @@ body{
     font-size: 2em;
     font-weight: 500;
 }
+
+/*Game container*/
+.game-container{
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+.game-area{
+    width: 100%;
+    flex-grow: 2;
+    position: relative;
+}
+
+/*Dog styles*/
+.dog-moving-area{
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+}
+.dog-single{
+    position: absolute;
+    top: -190px;
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    background: url(assets/images/dog/single/0.png) center center no-repeat;
+    background-size: cover;
+}
+
+/*Ducks styles*/
+.duck{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+.black-duck-left{
+    background: url(assets/images/duck/black/left/0.png) center center no-repeat;
+    background-size: cover;
+}
+
+/*Message container*/
 .message-bar{
     width: 100%;
     text-align: center;
@@ -94,6 +141,8 @@ body{
     letter-spacing: 1px;
     filter: blur(1px);
 }
+
+/*Control container*/
 .control-bar{
     width: 100%;
     display: flex;
