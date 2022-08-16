@@ -209,3 +209,13 @@ body{
     border: unset;
     opacity: 0.8;
 }
+
+@media screen and (max-height: 962px){
+    .died-duck-icon,
+    .left-duck-icon{
+        height: 32px;
+    }
+    .waves-info{
+        margin-bottom: 0px;
+    }
+}
